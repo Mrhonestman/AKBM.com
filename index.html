@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <div id ="header">
+            <div class="container">
+                <nav>
+                        <img src="Image/Logo.png" class="Logo" >
+                        <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#About">About </a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                        </ul>  
+                        <i class="fas fa-bars" onclick="openmenu()"></i>  
+                               
+                </nav>
+                
+                
+                <div class="header-text">
+                    <p>💻👨‍🎓 Computer Engineering Student 👩‍💻📚  </p>
+                    
+                    <h1> Namaste<span class="namaste">🙏</span>, I'm <span>Abiral <br> Kumar Budhamagar </span> 
+                        Form Nepal</h1>
+                     
+                </div>
+                
+            </div>
+             <img src="Image/Background.png" class="nav-image" alt="Background Image"> 
+        </div>
+        <!-- about me -->
+
+<div id ="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Image/about.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="Sub-title">About Me</h1><br>
+                <p>I'm a passionate Computer Engineering student with a solid foundation in software development and a growing specialization in cybersecurity. While I’ve enjoyed working on software projects involving Python, C/C++, and Java, my current career focus is on defending digital systems and understanding real-world cyber threats.
+
+                    I actively explore areas like ethical hacking, network security, secure coding, and threat analysis. I'm hands-on with tools such as Wireshark, Nmap, Burp Suite, and Linux-based environments, and I’m constantly honing my skills through projects and self-study.
+
+                    I’ve worked on small web and desktop application projects, which has given me a developer's perspective on secure software design. Now, I'm seeking internships or project opportunities that allow me to apply cybersecurity principles in practical settings, collaborate with like-minded professionals, and deepen my expertise in this critical and ever-evolving field.
+
+                    Let’s connect and work together to build secure, impactful technology!!</p><br>
+
+               <div class ="tab-titles">
+                   <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                   <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                   <div class="tab-links" onclick="opentab('education')">Education</div>
+               </div>
+               <div class="tab-contents active-tab" id="skills">   
+                <ul>
+                    <li><span>UI/UX</span><br>Designing user-friendly interfaces</li>
+                     <li><span>Programming languages</span><br>Proficient in Python, C/C++, and Java, HTML, basic CSS, and basic JavaScript</li>
+                     <li><span>Cybersecurity Knowledge</span><br>Understanding of ethical hacking(basic), network security, and secure coding practices</li>
+                     <li><span>Tools & Technologies</span><br>Linux (Ubuntu, Kali, etc.), Git & GitHub, Visual Studio Code, Wireshark</li>
+                     <li><span>Other Skills</span><br>Team Collaboration, Problem Solving, Version Control (Git)</li>
+                </ul>
+               </div>
+               <div class="tab-contents" id="experience">   
+                <ul>
+                    <li><span>2020</span><br>Secret Number Hunt - C(Game for guessing the number) <br></li>
+                    <li><span>2022</span><br>Scientific Calculator – Java <br></li>
+                    <li><span>2023</span><br>Hotel Management System – Java <br></li>
+                    <li><span>2024</span><br>Telephone Billing System – Java <br></li>
+                    <li><span>2024-Present</span><br>School Management System – Python, Django <br></li>
+                     <li><span>Present</span><br>E-commerce application – Python, Django <br></li>
+                </ul>
+               </div>
+                <div class="tab-contents" id="education">   
+                <ul>
+                    <li><span>2020</span><br>Springdale English Secondary School(School level Education )<br></li>
+                    <li><span>2022</span><br>SS-collage(Higher level Education) <br></li>
+                    <li><span>2022-present</span><br> Nepal Engineering Collage(undergraduate) <br></li>
+                </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----services----->
+<div id="services">
+    <div class="container">
+        <h1 class="Sub-title">My Services</h1><br>
+        <div class="services-list">
+            <div>   
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Building responsive and secure web applications using modern technologies.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-shield-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Designing user-friendly and visually appealing interfaces for web and mobile apps.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------portfolio------ -->
+<div id ="portfolio">
+    <div class="container">
+        <h1 class="Sub-title">My Work</h1><br>
+        <div class="work-list">
+            <div class="work">
+                <img src="Image/Hotel.jpg">
+                <div class="layer">
+                    <h3>Hotel Management System</h3><br>
+                    <p>A web application for managing hotel bookings and customer information.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Image/School.jpg">
+                 <div class="layer">
+                    <h3>School Management System</h3><br>
+                    <p>A web application for managing school operations and student information.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Image/ec.png">
+                <div class="layer">
+                    <h3>E-commerce application</h3><br>
+                    <p>A web application for managing online sales and customer interactions.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+            <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!--------contact------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="Sub-title">Contact Me</h1><br>
+                <p> <i class="fas fa-paper-plane"></i> abiralmagarc7@gmail.com</p><br>
+                <p> <i class="fas fa-phone"></i>Click the links below to connect with me 👇</p>
+                <div class="contact-icons">
+                    <a href="https://www.facebook.com/abiral.magar.7547"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/home"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/abiral-kumar-budhamagar-26b3a72b0/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/honestman2895/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+          <div class="contact-right">
+    <form name="submit-to-google-sheet">
+        <input type="text" name="Name" class="text-box" placeholder="Your Name" required>
+        <input type="email" name="Email" class="text-box" placeholder="Your Email" required>
+        <textarea name="Message" class="text-box"  rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+    </form>
+    <span id="msg"></span>
+</div>
+
+    </div>
+    <div class="copyright">
+        <p>Every word is a spark and this is just the beginning.</p><br>
+            <p>Copyright & copy; 2025 - Abiral Kumar Budhamagar</p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }   
+</script>
+
+<form name="submit-to-google-sheet">
+  <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
+</form>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxLWoyKSTJJMyOeArSyN6jQ2Ssxgotn9MZa51lxx4CacMjxTcKC9UaXl7s2Nx2GadfKKA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!";
+        setTimeout(function(){
+            msg.innerHTML = "";
+        },1000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+     
+    </body>
+</html>
